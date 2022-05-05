@@ -1,4 +1,16 @@
+//Variable Declarations
 let etch = document.querySelectorAll('.etch');
+let i = 0
+let scale = document.querySelector('.scale')
+var container = document.querySelector(".container")
+
+//Events
+scale.addEventListener('click', function(e){
+  let number = prompt('What size grid would you like to create?')
+  container.innerHTML = ''
+  containSize(number)
+ });
+ 
 
 etch.forEach((etch) => {
 etch.addEventListener("mouseover", function( event ) {
@@ -6,7 +18,19 @@ etch.addEventListener("mouseover", function( event ) {
   false);
 })
 
-let scale = document.querySelector('.scale')
+let refresh = document.querySelector('.refresh')
+refresh.addEventListener('click', function(e){
+  window.location.reload()
+})
+  
+//Multiplier Function
+function containSize(number){
+  if (number > 100){
+    alert('Please enter a number less than 100.')
+    return
+  }
 
-scale.addEventListener('click', function(e){
-  prompt('What size grid would you like to create?')});
+  for (var i = 0; i <= (number * number); i++) {
+    container.innerHTML += '<div class="etch"></div>';
+ }
+}
