@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(184, 144, 157);
+}
+
+p {
+
+}
+
+.side{
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr;
+    grid-template-rows: 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr;
+    flex-wrap: wrap;
+    width: 544px;
+    height: 544px;
+    border: 16px solid;
+    border-color: blanchedalmond;
+    border-radius: 16px;
+}
+
+.etch {
+    width: 32px;
+    height: 32px;
+    border: 1px solid;
+    border-color: blanchedalmond;
+    background-color: coral;
+}
+
+.highlight {
+    background-color: grey;
+}
