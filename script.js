@@ -1,6 +1,5 @@
 //Variable Declarations
 let etch = document.querySelectorAll('.etch');
-let i = 0
 let scale = document.querySelector('.scale')
 var container = document.querySelector(".container")
 
@@ -30,7 +29,7 @@ function containSize(number){
     return
   }
 
-  for (var i = 0; i <= (number * number); i++) {
+  for (var i = 1; i <= (number * number); i++) {
     container.innerHTML += '<div class="etch"></div>';
- }
+ }  
 }

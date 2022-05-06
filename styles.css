@@ -12,10 +12,12 @@ p {
     padding-bottom: 20px;
 }
 .container {
-    display: flex;
+    display: grid;
     margin: auto;
+    grid-template-columns: 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr;
     flex-wrap: wrap;
     width: 544px;
+    overflow: hidden;
     height: 544px;
     border: 16px solid;
     border-color: blanchedalmond;
@@ -23,8 +25,8 @@ p {
 }
 
 .etch {
-    width: 32px;
-    height: 32px;
+    flex-basis: 50%;
+    flex-grow: 1;
     border: 1px solid;
     border-color: blanchedalmond;
     background-color: coral;
