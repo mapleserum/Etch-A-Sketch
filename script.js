@@ -2,6 +2,7 @@
 let etch = document.querySelectorAll('.etch');
 let scale = document.querySelector('.scale')
 var container = document.querySelector(".container")
+let highlight = document.querySelectorAll(".highlight")
 
 
 //Events
@@ -26,7 +27,7 @@ refresh.addEventListener('click', function(e){
 //Color Buttons
 let black = document.querySelector('#black')
 black.addEventListener('click', function(e){
-  document.getElementById("myDiv").style.backgroundColor = 'black'
+  document.getElementById("highlight").style.backgroundColor = 'black'
 })
 
 let white = document.querySelector('#white')
