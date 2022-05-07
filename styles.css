@@ -13,20 +13,18 @@ p {
 }
 .container {
     display: grid;
+    grid-template-columns: repeat(16, 1fr);
     margin: auto;
-    grid-template-columns: 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr 16fr;
-    flex-wrap: wrap;
-    width: 544px;
     overflow: hidden;
     height: 544px;
+    width: 544px;
     border: 16px solid;
     border-color: blanchedalmond;
     border-radius: 16px;
 }
 
 .etch {
-    flex-basis: 50%;
-    flex-grow: 1;
+    flex: 1 1 50%;
     border: 1px solid;
     border-color: blanchedalmond;
     background-color: coral;
